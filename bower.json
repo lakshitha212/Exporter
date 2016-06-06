@@ -15,11 +15,13 @@
   "private": true,
   "devDependencies": {
     "bootstrap": "^3.3.6",
-    "jquery": "^2.2.4"
+    "jquery": "^2.2.4",
+    "components-font-awesome": "^4.6.3"
   },
   "dependencies": {
     "jquery": "^2.2.4",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "components-font-awesome": "^4.6.3"
   },
   "overrides": {
     "bootstrap": {
