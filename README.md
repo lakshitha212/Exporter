@@ -3,10 +3,19 @@ Exporter
 # Documentation
 Run these commands to set up the Exporter:
 ```bash
+Clone the repo:
 git clone https://github.com/lakshitha212/Exporter
+
+Move into that directory:
 cd Exporter
+
+Install the dependencies:
 npm install
+
+Install the bower packages and dependencies:
 bower install
+
+Run the grunt process:
 grunt wiredep
 ```
 # How do I use it?
