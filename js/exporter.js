@@ -6,10 +6,19 @@
     'use strict';
     $.fn.exporter = function (options) {
         var settings = $.extend({
-            color: ["#F1BB5F", "#59D2FB", "#967EA3", "#F3DFE4", "#AB92B2", "#5D5A89", "#A2BFD8"],
-            serverUrl: "",
-            webServiceURL: ""
+            _id: "",
+            _align: "text-right"
         }, options);
         console.log(settings);
+        $('#content_tbl').prepend(
+            $("<div/>", {
+                class: "row " + settings._align
+            }).append(
+                $("<div/>", {
+                    text: "Hello World",
+                    class: "col-md-12"
+                })
+            )
+        );
     };
 }(jQuery));
