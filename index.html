@@ -5,23 +5,22 @@
     <meta charset="UTF-8">
     <title>Exporter</title>
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css"/>
     <!-- endbower -->
 </head>
 <body>
 <div class="container">
-    <h2>Table</h2>
+    <h2>Exporter</h2>
     <section class="content">
         <div id="content_tbl">
             <div class="table-responsive">
-                <table class="table table-bordered ">
+                <table class="table table-bordered">
                     <thead>
                     <tr>
                         <th>#</th>
                         <th>Firstname</th>
                         <th>Lastname</th>
-                        <th>Age</th>
                         <th>City</th>
                         <th>Country</th>
                     </tr>
@@ -29,107 +28,31 @@
                     <tbody>
                     <tr>
                         <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
+                        <td>Asitha</td>
+                        <td>Vajirapani</td>
+                        <td>Piliyandala</td>
+                        <td>Sri Lanka</td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
+                        <td>2</td>
+                        <td>Charith</td>
+                        <td>De Silva</td>
+                        <td>Ratmalana</td>
+                        <td>Sri Lanka</td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
+                        <td>3</td>
+                        <td>Kusal</td>
+                        <td>Kavinda</td>
+                        <td>Colombo</td>
+                        <td>Sri Lanka</td>
                     </tr>
                     <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Anna</td>
-                        <td>Pitt</td>
-                        <td>35</td>
-                        <td>New York</td>
-                        <td>USA</td>
+                        <td>4</td>
+                        <td>Nuwan</td>
+                        <td>Tharinda</td>
+                        <td>Colombo</td>
+                        <td>Sri Lanka</td>
                     </tr>
                     </tbody>
                 </table>
@@ -145,7 +68,9 @@
 <script type="text/javascript">
     $('body').exporter({
         _id: "content_tbl",//container id
-        _align: "text-right"//display
+        _align: "text-right",//display
+        _type: [1, 2],//1=> EXL , 2=> PDF
+        _file: "Report"//File name xls
     });
 </script>
 </body>
